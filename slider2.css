@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 50px auto 50px;
+}
+
+.cabecalho, .rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cadetblue;
+}
+
+.principal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.galeria{
+    width: 700px;
+    height: 300px;
+    border: 5px solid black;
+    overflow: hidden;
+}
+
+.fotos{
+    height: 700%;
+    animation: slider 20s infinite;
+}
+
+img{
+    height: 14.2%;
+}
+
+@keyframes slider {
+    0% { margin-top: 0;}
+    12% { margin-top: 0;}
+    16% { margin-top: -300px;}
+    29% { margin-top: -300px;}
+    33% { margin-top: -600px;}
+    46% { margin-top: -600px;}
+    50% { margin-top: -905px;}
+    62% { margin-top: -905px;}
+    66% { margin-top: -1210px;}
+    79% { margin-top: -1210px;}
+    83% { margin-top: -1510px;}
+    96% { margin-top: -1510px;}
+    100% { margin-top: 0px;}
+}
